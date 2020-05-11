@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.class {
+	color: rgba(225, 225, 225, 0.5);
+}
+
+
+/* common style */
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after{
+    box-sizing: inherit;
+  }
+body,html {
+    height: 100%;
+    min-height: 250px;
+    font-size: 100%;
+    font-family: 'Noto Serif JP', serif;
+    line-height: 1.5;
+    color: #888888;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+
+
+
+/* global header */
+.global_header {
+    background-color: #ffffff;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 10;
+}
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 10%;
+}
+
+.logo {
+    width: 40px;
+    margin-top: 8px;
+}
+.global_nav {
+    display: flex;
+    font-size: 1.05rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+.global_nav li {
+    margin-left: 8vw;
+}
+.global_nav a {
+    color: #888888;
+    font-weight: 200;
+}
+.global_nav a:hover {
+    color: #545454;
+}
+
+
+
+
+/* home style */
+.hero_img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#home {
+    background-image: url(../img/home_bg.svg), linear-gradient(rgba(255, 255, 255, .2),rgba(183, 206, 219, 1));
+    background-blend-mode: screen;
+    min-height: 100vh;
+}
+
+
+
+
+/* about style */
+.about_content{
+    margin: 0, auto;
+    height: 100vh;
+}
+.about_content div{
+    margin: 0, auto;
+}
+.about_content h2{
+    text-align: center;
+    margin-top: 38vh;
+    font-size: 2em;
+}
+.about_content p{
+    max-width: 780px;
+    font-size: .85em;
+    font-weight: 500;
+    text-align: justify;  
+    margin-top: 6%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* about contents style */
+.grid{
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-row: 340px;
+    margin-bottom: 6vh;
+}
+.item{
+    margin-bottom: 4vh;
+}
+.item img{
+    object-fit: cover;
+}
+.item p{
+    font-size: 0.8em;
+}
+
+
+
+
+/* contact style */
+.contact_contents{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 0;
+}
+
+/* address text style */
+.addr_info{
+    width: 50%;
+    height: 60vh;
+    min-height: 400px;
+    margin-top: 20vh;
+}
+.addr_text{
+    margin:12vh auto;
+    max-width: 410px;
+}
+.addr_text h2{
+    font-size: 1.5em;
+    line-height: 2.8em;
+}
+h2 small{
+    font-size: .6em;
+    font-weight: 100;
+}
+.addr_text p{
+    font-size: .85em;
+}
+.addr_text_detail{
+    margin-top: 2em;
+    font-size: .75em;
+    line-height: 1.6em;
+    text-align: justify;
+}
+/* address logo style */
+.addr_info_container{
+    position:relative;
+    margin-top: 20vh;
+    margin-right: 4vw;
+    width: 50%;
+    height: 60vh;
+    background-color: #b7ceda;
+}
+.addr_info_logo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10vw;
+    min-width: 86px;
+    height: 60vh;
+}
+
+/* location Google map */
+iframe{
+    width: 100%;
+    margin-bottom: 15vh;
+}
+
+
+
+/* .addr_info_logo{
+    margin-top: 12vh;
+}
+.contact_contents p{
+    text-align: center;
+    margin-top: 38vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .9em;
+} */
