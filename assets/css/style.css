@@ -247,9 +247,9 @@ iframe{
     margin-bottom: 8vh;
 }
 /* SNS links style */
-#sns{
+/* #sns{
     padding: 4% 0;
-}
+} */
 #sns .wrapper{
     display: flex;
     justify-content: space-between;
