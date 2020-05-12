@@ -245,8 +245,10 @@ iframe{
     justify-content: space-between;
 }
 #sns .sub_title{
-    margin-bottom: 30px;
+    display: block;
+    margin-bottom: 26px;
     font-size: 1em;
+    padding-bottom: 0.5em;
     border-bottom: 1px #b7ceda solid;
 }
 .sns_box{
