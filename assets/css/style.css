@@ -248,12 +248,11 @@ iframe{
     z-index: 0;
 }
 .friends_info{
-    height: 60vh;
-    min-height: 400px;
-    margin: 0 auto 20vh;
+    display: block;
+    margin: 80px auto 0;
 }
 .friends_text{
-    margin:12vh auto;
+    margin: 0 auto 12vh;
     max-width: 820px;
 }
 .friends_text_detail{
