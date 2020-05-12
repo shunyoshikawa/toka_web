@@ -247,9 +247,6 @@ iframe{
     margin-bottom: 8vh;
 }
 /* SNS links style */
-/* #sns{
-    padding: 4% 0;
-} */
 #sns .wrapper{
     display: flex;
     justify-content: space-between;
@@ -264,6 +261,7 @@ iframe{
 .sns_box{
     width: 48%;
     max-width: 500px;
+    margin-bottom: 4%;
 }
 .sns_box iframe{
     width: 100%;
