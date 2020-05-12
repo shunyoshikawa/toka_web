@@ -242,9 +242,9 @@ h2 small{
     height: 60vh;
 }
 /* location Google map */
-iframe{
+.lication_map iframe{
     width: 100%;
-    margin-bottom: 8vh;
+    margin-bottom: 12vh;
 }
 /* SNS links style */
 #sns .wrapper{
@@ -261,7 +261,7 @@ iframe{
 .sns_box{
     width: 48%;
     max-width: 500px;
-    margin-bottom: 4%;
+    margin-bottom: 10vh;
 }
 .sns_box iframe{
     width: 100%;
