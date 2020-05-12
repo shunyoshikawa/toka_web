@@ -62,7 +62,6 @@ html{
     box-sizing: inherit;
   }
 body,html {
-    background-color: #f9f9f9;
     height: 100%;
     min-height: 250px;
     font-size: 100%;
@@ -82,7 +81,7 @@ img {
 
 /* global header */
 .global_header {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -125,7 +124,7 @@ img {
     background-repeat: no-repeat;
 }
 #home {
-    background-image: url(../img/home_bg.svg), linear-gradient(rgba(249, 249, 249, .8), rgba(249, 249, 249, .4), rgba(228, 240, 242, .4));
+    background-image: url(../img/home_bg.svg), linear-gradient(rgba(255, 255, 255, .2),rgba(183, 206, 219, 1));
     background-blend-mode: screen;
     min-height: 100vh;
 }
