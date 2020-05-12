@@ -234,10 +234,38 @@ h2 small{
 /* location Google map */
 iframe{
     width: 100%;
-    margin-bottom: 18vh;
+    margin-bottom: 8vh;
 }
-
-
+/* SNS links style */
+#sns{
+    padding: 4% 0;
+}
+#sns .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#sns .sub_title{
+    margin-bottom: 30px;
+    font-size: 1em;
+    border-bottom: 1px #b7ceda solid;
+}
+.sns_box{
+    width: 45%;
+    max-width: 500px;
+}
+.sns_box iframe{
+    width: 100%;
+}
+.sns_box img{
+    display: block;
+    width: 100%;
+    object-position:0% 3%;
+    object-fit: cover;
+    max-height: 130px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e6f2ff;
+}
 
 
 /* friends_style */
