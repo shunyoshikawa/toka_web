@@ -303,6 +303,17 @@ h2 small{
     margin-left: auto;
 }
 /* friends contents style */
+.friends_box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.friends_box img{
+    width: 40%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
 .friends_contents{
     display: flex;
     justify-content: space-between;
@@ -314,7 +325,8 @@ h2 small{
     margin: 0 auto;
 }
 .friends_text{
-    margin: 0 auto 15vh;
+    margin: 0 auto 0 0;
+    width: 55%;
     max-width: 820px;
 }
 .friends_text_detail{
@@ -325,7 +337,8 @@ h2 small{
 }
 .friends_text h2{
     font-size: 1.8em;
-    line-height: 1.6em;
+    /* Take a negative margin with looking for the exact way to do the head alignment on the texts shape. */
+    margin-top: -0.35em;
 }
 .friends_text > p{
     font-size: 0.85em;
