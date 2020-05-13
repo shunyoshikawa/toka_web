@@ -310,7 +310,8 @@ h2 small{
 }
 .friends_box img{
     width: 40%;
-    height: 100%;
+    height: auto;
+    min-width: 360px;
     min-height: 300px;
     object-fit: cover;
 }
@@ -335,10 +336,18 @@ h2 small{
     text-align: justify;
 }
 .friends_text h2{
-    font-size: 1.8em;
+    font-size: 1.6em;
     /* Take a negative margin with looking for the exact way to do the head alignment on the texts shape. */
     margin-top: -0.35em;
 }
+
+.friends_text > .indent-01{
+    text-indent: -0.1em;
+}
+.friends_text > .indent-015{
+    text-indent: -0.15em;
+}
+
 .friends_text > p{
     font-size: 0.85em;
     margin-top: 40px;
@@ -350,4 +359,5 @@ h2 small{
     font-size: .85em;
     line-height: 1.6em;
     margin-top: 20px;
+    margin-right: 5%;
 }
