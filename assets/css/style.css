@@ -95,6 +95,7 @@ img {
     display: flex;
     position: fixed;
     justify-content: space-between;
+    box-shadow: 0 3px 6px 6px #ffffff;
     z-index: 10;
 }
 .wrapper {
@@ -196,18 +197,24 @@ img {
 }
 /* address text style */
 .addr_info{
+    position: relative;
     width: 50%;
     height: 60vh;
-    min-height: 400px;
     margin-top: 20vh;
 }
 .addr_text{
-    margin:12vh auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 200px;    
     max-width: 410px;
 }
 .addr_text h2{
     font-size: 1.5em;
-    line-height: 2.8em;
+    margin-bottom: 1.5em;
 }
 h2 small{
     font-size: .6em;
@@ -306,7 +313,7 @@ h2 small{
 .friends_box{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 .friends_box img{
     width: 40%;
