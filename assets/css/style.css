@@ -62,8 +62,8 @@ html{
     box-sizing: inherit;
   }
 body ,html {
-    animation: fadeIn 0.8s ease 0s 1 normal;
-    -webkit-animation: fadeIn 0.8s ease 0s 1 normal;
+    animation: fadeIn 1s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1s ease 0s 1 normal;
     height: 100%;
     min-height: 250px;
     font-size: 100%;
@@ -116,7 +116,8 @@ img {
 .global_nav li {
     margin-left: 8vw;
 }
-.global_nav a {
+.global_nav a{
+    cursor:　pointer;
     color: #888888;
     font-weight: 200;
 }
