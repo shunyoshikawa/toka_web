@@ -303,11 +303,11 @@ h2 small{
 .friends_box{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8%;
+    margin-bottom: 10%;
 }
 .friends_box img{
-    width: 40%;
-    height: auto;
+    width: 50%;
+    height: 30%;
     min-width: 360px;
     min-height: 300px;
     object-fit: cover;
@@ -324,7 +324,7 @@ h2 small{
 }
 .friends_text{
     margin: 0 5% 0 0;
-    width: 56%;
+    width: 50%;
 }
 .friends_text_detail{
     margin-top: 10px;
@@ -351,8 +351,9 @@ h2 small{
     font-size: 0.25em;
 }
 .friends_text_detail p{
-    font-size: .9em;
-    line-height: 1.6em;
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1.5em;
     margin-top: 20px;
 }
 
