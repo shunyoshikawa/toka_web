@@ -86,6 +86,24 @@ img {
     max-width: 100%;
 }
 
+/* intro part */
+.content_intro{
+    margin: 0, auto;
+    height: 100vh;
+    text-align: center;
+}
+.content_intro h2{
+    margin: 38vh auto 3%;
+    font-size: 2em;
+}
+.content_intro p{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: .85em;
+    font-weight: 500;
+    text-indent: 0.7em;
+    text-align: justify; 
+}
 
 
 
@@ -144,28 +162,6 @@ img {
 
 
 /* about style */
-.about_content{
-    margin: 0, auto;
-    height: 100vh;
-}
-.about_content div{
-    margin: 0, auto;
-}
-.about_content h2{
-    text-align: center;
-    margin-top: 38vh;
-    font-size: 2em;
-}
-.about_content p{
-    max-width: 780px;
-    font-size: .85em;
-    font-weight: 500;
-    text-align: justify;  
-    margin-top: 6%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 /* about contents style */
 .grid{
     display: grid;
@@ -289,27 +285,6 @@ h2 small{
 
 
 /* friends style */
-.explanatory_text_content{
-    margin: 0, auto;
-    height: 100vh;
-}
-.explanatory_text_content div{
-    margin: 0, auto;
-}
-.explanatory_text_content h2{
-    text-align: center;
-    margin-top: 38vh;
-    font-size: 2em;
-}
-.explanatory_text_content p{
-    max-width: 520px;
-    font-size: .85em;
-    font-weight: 500;
-    text-align: justify;  
-    margin-top: 6%;
-    margin-right: auto;
-    margin-left: auto;
-}
 /* friends contents style */
 .friends_box{
     display: flex;
