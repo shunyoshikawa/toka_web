@@ -107,6 +107,7 @@ img {
 
 
 
+
 /* global header */
 .global_header {
     background-color: #ffffff;
@@ -284,6 +285,8 @@ h2 small{
 }
 
 
+
+
 /* friends style */
 /* friends contents style */
 .friends_box{
@@ -323,14 +326,12 @@ h2 small{
     /* Take a negative margin with looking for the exact way to do the head alignment on the texts shape. */
     margin-top: -0.35em;
 }
-
 .friends_text > .indent-01{
     text-indent: -0.1em;
 }
 .friends_text > .indent-015{
     text-indent: -0.15em;
 }
-
 .friends_text > p{
     font-size: 0.85em;
     margin-top: 40px;
