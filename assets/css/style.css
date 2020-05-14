@@ -266,11 +266,13 @@ h2 small{
     border-bottom: 1px #b7ceda solid;
 }
 .sns_box{
+    position: relative;
     width: 48%;
     max-width: 500px;
     margin-bottom: 10vh;
 }
 .sns_box iframe{
+    height: 100%;
     width: 100%;
 }
 /* instagram link */
