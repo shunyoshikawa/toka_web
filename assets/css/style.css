@@ -368,11 +368,9 @@ h2 small{
 
 /* ----- @media Media Queries ----- */
 /* style for tablet */
-@media (max-width: 559px){  
-    /* .global_nav {
-        display: flex;
-        font-size: 1.05rem;
-        list-style: none;
-        margin-top: 1rem;
-    } */
+@media (max-width: 579px){
+    .global_nav_container{
+        display: none;
+    }
 }
+
