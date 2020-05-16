@@ -201,7 +201,7 @@ img {
 .contact_contents{
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    height: 100vh;
     z-index: 0;
 }
 /* address text style */
@@ -356,6 +356,14 @@ h2 small{
     line-height: 1.5em;
     margin-top: 20px;
 }
+
+
+
+
+
+
+
+
 
 
 /* ----- @media Media Queries ----- */
