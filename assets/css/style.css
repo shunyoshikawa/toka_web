@@ -308,6 +308,8 @@ h2 small{
 .friends_box{
     display: flex;
     justify-content: space-between;
+    border-bottom: #8888884a solid 1px;
+    padding-bottom: 10%;
     margin-bottom: 10%;
 }
 .friends_box img{
@@ -330,6 +332,9 @@ h2 small{
 .friends_text{
     margin: 0 5% 0 0;
     width: 50%;
+}
+.friends_text br{
+    display: none;
 }
 .friends_text_detail{
     margin-top: 10px;
@@ -365,13 +370,57 @@ h2 small{
 
 
 
-
-
-
-
-
-
 /* ----- @media Media Queries ----- */
+
+/* style for tablet (949px) */
+@media (max-width: 949px){
+    /* friends contents style */
+    .friends_info{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .friends_box{
+        display: flex;
+        margin-bottom: 15%;
+    }
+    .friends_text{
+        min-width: 120px;
+        min-height: 100px;
+        width: 100%;
+    }
+    .friends_text br{
+        display: block;
+    }
+    .friends_box img{
+        min-width: 120px;
+        min-height: 100px;
+        width: 100%;
+    }
+    .friends_text h2{
+        font-size: 1.5em;
+        /* Take a negative margin with looking for the exact way to do the head alignment on the texts shape. */
+        margin-top: 0em;
+    }
+    .friends_text > .indent-01{
+        text-indent: -0.1em;
+    }
+    .friends_text > .indent-015{
+        text-indent: -0.15em;
+    }
+}
+
+/* style for tablet (949px) */
+@media (max-width: 520px){
+    .friends_box{
+        display: block;
+        margin-bottom: 15%;
+    }
+    .friends_text br{
+        display: none;
+    }
+}
+
 /* style for tablet (579px) */
 @media (max-width: 579px){
 
@@ -392,8 +441,6 @@ h2 small{
         width: 36px;
         height: 22px;
     }
-
-
 
     /*hamburger icon*/
     #nav-open span, #nav-open span:before, #nav-open span:after {
@@ -416,8 +463,6 @@ h2 small{
         bottom: -28px;
     }
 
-
-
     /*behind　cover*/
     #nav-close {
         display: none;
@@ -431,7 +476,6 @@ h2 small{
         opacity: 0;
         transition: .3s ease-in-out;
     }
-
     /*menu contents*/
     #nav-content {
         overflow: auto;
@@ -464,8 +508,6 @@ h2 small{
         border-bottom: #b7ceda64 solid 1px;
     }
 
-
-
     /*nav checked*/
     #nav-input:checked ~ #nav-close {
         display: block;
@@ -477,5 +519,69 @@ h2 small{
         transform: translateX(0%);
         box-shadow: 12px 0 25px rgba(0, 0, 0, 0.2);
     }
+
+    /* about contents style */
+    .grid{
+        display: grid;
+        gap: 0;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-row: 340px;
+        margin-bottom: 8vh;
+    }
+
+    /* address text style */
+    .addr_info{
+        position: relative;
+        display: block;
+        width: 50%;
+        height: 60vh;
+        margin: auto;
+    }
+    .addr_text h2{
+        font-size: 1.5em;
+        margin-top: .5em;
+        margin-bottom: 1em;
+    }
+    .addr_text p{
+        font-size: .75em;
+        text-decoration: none;
+    }
+    .addr_text_detail{
+        margin-top: 1.2em;
+        font-size: .75em;
+        line-height: 1.5em;
+    }
+
+    /* friends contents style */
+    .friends_text_detail{
+        margin: 15px 0;
+        font-size: .75em;
+        line-height: 1.5em;
+        text-align: justify;
+    }
+    .friends_text h2{
+        font-size: 1.25em;
+        /* Take a negative margin with looking for the exact way to do the head alignment on the texts shape. */
+        margin-top: 0em;
+    }
+    .friends_text > .indent-01{
+        text-indent: -0.1em;
+    }
+    .friends_text > .indent-015{
+        text-indent: -0.15em;
+    }
+    .friends_text > p{
+        font-size: 0.85em;
+        margin-top: 18px;
+    }
+    .friends_text h2 small{
+        font-size: 0.25em;
+    }
+    .friends_text_detail p{
+        font-size: 1em;
+        line-height: 1.5em;
+        margin-top: 0px;
+    }
+
 }
 
