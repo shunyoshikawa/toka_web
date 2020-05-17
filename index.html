@@ -15,7 +15,7 @@
                 '<style type="text/css">#container { display: none; } #fade, #loader { display: block; }</style>'
             );
               
-            jQuery.event.add(window,"load",function() { // 全ての読み込み完了後に呼ばれる関数
+            jQuery.event.add(window,"load",function() { // memo:全ての読み込み完了後に呼ばれる関数
                 var pageH = $("#container").height();
               
                 $("#fade").css("height", pageH).delay(900).fadeOut(800);
@@ -32,34 +32,32 @@
         </div>
         <div id="fade"></div>
 
-        <!-- <div id="container"> -->
-            <div id="home" class="hero_img">
+        <div id="home" class="hero_img">
             
-                <header class="global_header wrapper">
-                    <h1><a href="index.html"><img class="logo" src="assets/img/logo.svg" alt="十香ホーム"></a></h1>
-                    
-                    <div id="nav-drawer">
-                        <input id="nav-input" type="checkbox" class="nav-unshown">
-                        <label id="nav-open" for="nav-input"><span></span></label>
-                        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-                        <div id="nav-content">
-                            <nav class="global_nav_container">
-                                <ul class="global_nav">
-                                    <li><a href="assets/html/about.html">十香について</a></li>
-                                    <li><a href="assets/html/contact.html">御ところ、便り</a></li>
-                                    <li><a href="assets/html/friends.html">御紹介</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+            <header class="global_header wrapper">
+                <h1><a href="index.html"><img class="logo" src="assets/img/logo.svg" alt="十香ホーム"></a></h1>
+                
+                <div id="nav-drawer">
+                    <input id="nav-input" type="checkbox" class="nav-unshown">
+                    <label id="nav-open" for="nav-input"><span></span></label>
+                    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                    <div id="nav-content">
+                        <nav class="global_nav_container">
+                            <ul class="global_nav">
+                                <li><a href="assets/html/about.html">十香について</a></li>
+                                <li><a href="assets/html/contact.html">御ところ、便り</a></li>
+                                <li><a href="assets/html/friends.html">御紹介</a></li>
+                            </ul>
+                        </nav>
                     </div>
+                </div>
+    
+            </header>         
         
-                </header>         
-            
-            </div>
+        </div>
 
-            <div class="home_content">
-            </div>
-        <!-- </div> -->
+        <div class="home_content">
+        </div>
 
     </body>
 </html>
