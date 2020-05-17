@@ -452,6 +452,7 @@ h2 small{
         height: 100%;
         background: #131313d2;
         opacity: 0;
+        cursor: pointer;
         transition: .3s ease-in-out;
     }
     /*menu contents*/
