@@ -110,6 +110,7 @@ img {
 
 
 
+
 /* global header */
 .global_header {
     background-color: #ffffff;
@@ -145,234 +146,16 @@ img {
 .global_nav a:hover {
     color: #545454;
 }
+
 #nav-input{
     display: none;
 }
 
-/* home style */
-.hero_img {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#home {
-    background-image: url(../img/home_bg.svg), linear-gradient(rgba(255, 255, 255, .2),rgba(183, 206, 219));
-    background-blend-mode: screen;
-    min-height: 100vh;
-}
-
-
-/* about style */
-/* about contents style */
-.grid{
-    display: grid;
-    gap: 1vw;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    grid-row: 340px;
-    margin-bottom: 6vh;
-}
-.item{
-    margin-bottom: 4vh;
-}
-.item img{
-    object-fit: cover;
-}
-.item p{
-    font-size: 0.8em;
-}
-
-
-/* intro part */
-.content_intro{
-    margin: 0, auto;
-    height: 100vh;
-    text-align: center;
-}
-.content_intro h2{
-    margin: 38vh auto 3%;
-    font-size: 2em;
-}
-.content_intro p{
-    display: inline-block;
-    vertical-align: middle;
-    font-size: .85em;
-    font-weight: 500;
-    text-indent: 0.7em;
-    text-align: justify; 
-}
-
-
-/* contact style */
-.contact_contents{
-    display: flex;
-    justify-content: space-between;
-    height: 100vh;
-    z-index: 0;
-}
-/* address text style */
-.addr_info{
-    position: relative;
-    width: 50%;
-    height: 60vh;
-    margin-top: 20vh;
-}
-.addr_text{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    height: 200px;    
-    max-width: 410px;
-}
-.addr_text h2{
-    font-size: 1.5em;
-    margin-bottom: 1.5em;
-}
-h2 small{
-    font-size: .6em;
-    font-weight: 100;
-}
-.addr_text p{
-    font-size: .85em;
-}
-.addr_text_detail{
-    margin-top: 2em;
-    font-size: .75em;
-    line-height: 1.6em;
-    text-align: justify;
-}
-/* address logo style */
-.addr_info_container{
-    position:relative;
-    margin-top: 20vh;
-    margin-right: 4vw;
-    width: 50%;
-    height: 60vh;
-    background-color: #b7ceda;
-}
-.addr_info_logo img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 10vw;
-    min-width: 86px;
-    height: 60vh;
-}
-/* location Google map */
-.lication_map iframe{
-    width: 100%;
-    margin-bottom: 12vh;
-}
-/* SNS links style */
-#sns .wrapper{
-    display: flex;
-    justify-content: space-between;
-}
-#sns .sub_title{
-    display: block;
-    margin-bottom: 26px;
-    font-size: 1em;
-    padding-bottom: 0.5em;
-    border-bottom: 1px #b7ceda solid;
-}
-.sns_box{
-    position: relative;
-    width: 48%;
-    max-width: 500px;
-    margin-bottom: 10vh;
-}
-.sns_box iframe{
-    height: 100%;
-    width: 100%;
-}
-/* instagram link */
-.sns_box img{
-    display: block;
-    width: 100%;
-    object-position:0% 3%;
-    object-fit: cover;
-    max-height: 130px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #f0f0f0;
-}
-
-
-/* friends style */
-/* friends contents style */
-.friends_box{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10%;
-}
-.friends_box img{
-    width: 50%;
-    height: 30%;
-    min-width: 360px;
-    min-height: 300px;
-    object-fit: cover;
-}
-.friends_contents{
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    z-index: 0;
-}
-.friends_info{
-    display: block;
-    margin: 0 auto;
-}
-.friends_text{
-    margin: 0 5% 0 0;
-    width: 50%;
-}
-.friends_text_detail{
-    margin-top: 10px;
-    font-size: .75em;
-    line-height: 1.6em;
-    text-align: justify;
-}
-.friends_text h2{
-    font-size: 1.6em;
-    /* Take a negative margin with looking for the exact way to do the head alignment on the texts shape. */
-    margin-top: -0.35em;
-}
-.friends_text > .indent-01{
-    text-indent: -0.1em;
-}
-.friends_text > .indent-015{
-    text-indent: -0.15em;
-}
-.friends_text > p{
-    font-size: 0.85em;
-    margin-top: 40px;
-}
-.friends_text h2 small{
-    font-size: 0.25em;
-}
-.friends_text_detail p{
-    font-size: 1em;
-    font-weight: 100;
-    line-height: 1.5em;
-    margin-top: 20px;
-}
 
 
 
 
-
-
-
-
-
-
-/* ----- @media Media Queries ----- */
-/* style for tablet (579px) */
+/* -------------------------------------------------------------- */
 @media (max-width: 579px){
 
     header {
@@ -395,11 +178,11 @@ h2 small{
 
 
 
-    /*hamburger icon*/
+    /*ハンバーガーアイコンをCSSだけで表現*/
     #nav-open span, #nav-open span:before, #nav-open span:after {
         position: absolute;
-        height: 4px;
-        width: 36px;
+        height: 4px;/*線の太さ*/
+        width: 36px;/*長さ*/
         border-radius: 3px;
         background: #b7ceda;
         display: block;
@@ -418,12 +201,12 @@ h2 small{
 
 
 
-    /*behind　cover*/
+    /*閉じる用の薄黒カバー*/
     #nav-close {
-        display: none;
+        display: none;/*はじめは隠しておく*/
         position: fixed;
         z-index: 10;
-        top: 0;
+        top: 0;/*全体に広がるように*/
         left: 0;
         width: 100%;
         height: 100%;
@@ -432,19 +215,20 @@ h2 small{
         transition: .3s ease-in-out;
     }
 
-    /*menu contents*/
+    /*中身*/
     #nav-content {
         overflow: auto;
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 11;
-        width: 70%;
+        z-index: 11;/*最前面に*/
+        width: 80%;/*右側に隙間を作る（閉じるカバーを表示）*/
+        /* max-width: 90%;最大幅（調整してください） */
         height: 100%;
-        background: #fff;
-        transition: .3s ease-in-out;
+        background: #fff;/*背景色*/
+        transition: .3s ease-in-out;/*滑らかに表示*/
         -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
+        transform: translateX(-100%);/*左に隠しておく*/
     }
     .global_nav{
         display: block;
@@ -466,16 +250,15 @@ h2 small{
 
 
 
-    /*nav checked*/
+    /*チェックが入ったらもろもろ表示*/
     #nav-input:checked ~ #nav-close {
-        display: block;
+        display: block;/*カバーを表示*/
         opacity: .5;
     }
 
     #nav-input:checked ~ #nav-content {
         -webkit-transform: translateX(0%);
-        transform: translateX(0%);
+        transform: translateX(0%);/*中身を表示（右へスライド）*/
         box-shadow: 12px 0 25px rgba(0, 0, 0, 0.2);
     }
 }
-
