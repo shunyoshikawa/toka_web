@@ -167,11 +167,14 @@ img {
     height: 100vh;
     text-align: center;
 }
-.content_intro h2{
+.kv{
+    height: 100%;
+}
+.kv h2{
     margin: 38vh auto 3%;
     font-size: 2em;
 }
-.content_intro p{
+.kv p{
     display: inline-block;
     vertical-align: middle;
     font-size: .85em;
